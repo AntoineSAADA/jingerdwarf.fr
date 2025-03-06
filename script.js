@@ -1,16 +1,14 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Page chargée, script.js opérationnel !');
+  console.log('La page est chargée, script.js opérationnel !');
 
-  // Sélectionne la section contenant les icônes
+  // Appliquer un effet de perspective sur le conteneur des réseaux sociaux
   const socialLinks = document.querySelector('.social-links');
   if (socialLinks) {
-    // On applique un léger effet "perspective" quand on survole le conteneur
-    socialLinks.addEventListener('mouseover', () => {
+    socialLinks.addEventListener('mouseenter', () => {
       socialLinks.style.transition = 'transform 0.6s ease';
       socialLinks.style.transform = 'perspective(600px) rotateX(5deg)';
     });
-    socialLinks.addEventListener('mouseout', () => {
+    socialLinks.addEventListener('mouseleave', () => {
       socialLinks.style.transform = 'perspective(600px) rotateX(0deg)';
     });
   }

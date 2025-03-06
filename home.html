@@ -3,39 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Utilisation d'une police moderne -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <title>JingerDwarf - Page d’accueil</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="fade-in-down">
-    <h1 class="title">JingerDwarf</h1>
-    <p class="subtitle">Un univers modernisé</p>
+    <div class="container">
+      <h1 class="title">JingerDwarf</h1>
+    </div>
   </header>
 
   <main>
-    <div class="social-links fade-in-up">
-      <!-- Logo Google Drive -->
-      <a href="https://drive.google.com" target="_blank" class="social-icon">
-        <img src="images/drive.png" alt="Google Drive" />
-      </a>
-      <!-- Logo Instagram -->
-      <a href="https://instagram.com" target="_blank" class="social-icon">
-        <img src="images/instagram.png" alt="Instagram" />
-      </a>
-      <!-- Logo Twitter -->
-      <a href="https://twitter.com" target="_blank" class="social-icon">
-        <img src="images/x.png" alt="Twitter / X" />
-      </a>
-      <!-- Logo LinkedIn -->
-      <a href="https://linkedin.com" target="_blank" class="social-icon">
-        <img src="images/linkedin.png" alt="LinkedIn" />
-      </a>
+    <div class="container">
+      <section class="social-section fade-in-up">
+        <div class="social-links">
+          <!-- Logo Google Drive -->
+          <a href="https://drive.google.com" target="_blank" class="social-icon">
+            <img src="images/drive.png" alt="Google Drive" />
+          </a>
+          <!-- Logo Instagram -->
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+          <!-- Logo Twitter / X -->
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="images/x.png" alt="Twitter / X" />
+          </a>
+          <!-- Logo LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </section>
     </div>
   </main>
 
   <footer class="fade-in-up">
-    <p>&copy; 2025 JingerDwarf. Tous droits réservés.</p>
+    <div class="container">
+      <p>&copy; 2025 JingerDwarf. Tous droits réservés.</p>
+    </div>
   </footer>
 </body>
 </html>
