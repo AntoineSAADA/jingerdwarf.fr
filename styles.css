@@ -19,8 +19,14 @@
 
 /* --- STYLES DE BASE --- */
 body {
-  background: var(--main-bg-color) url('images/dark-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
+  /* Fond noir + image en "contain" pour éviter la découpe */
+  background: black; /* Couleur de fond par défaut pour les bords */
+  background-image: url('images/dark-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
+  background-attachment: fixed;
+  
   color: var(--text-color);
   font-family: var(--font-family);
   line-height: 1.6;
@@ -77,7 +83,8 @@ main {
 }
 .social-icon {
   display: inline-block;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
 }
 .social-icon img {
   width: 60px;
@@ -140,5 +147,11 @@ footer {
   .social-icon img {
     width: 50px;
     height: 50px;
+  }
+
+  /* Décale légèrement le contenu à gauche et aligne le texte */
+  .container {
+    margin-left: -20px;
+    text-align: left;
   }
 }
