@@ -1,0 +1,99 @@
+/* --- RESET DE BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- COULEURS GLOBALES --- */
+:root {
+  --main-bg-color: #0d0d0d;
+  --accent-color: #8a2be2; /* Violet */
+  --text-color: #ffffff;
+}
+
+/* --- BASE --- */
+body {
+  background: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- HEADER & FOOTER --- */
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* --- TITRE --- */
+.title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* --- MAIN (contenu principal) --- */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+/* --- BOUTON / LIEN DANS INDEX --- */
+.btn {
+  background: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* --- LIENS RÉSEAUX SOCIAUX --- */
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* --- ANIMATION FADE-IN --- */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  /* L’animation se joue sur 1s à l’affichage de l’élément */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
