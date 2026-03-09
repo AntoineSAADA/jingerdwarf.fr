@@ -155,3 +155,75 @@ footer {
     text-align: left;
   }
 }
+
+
+body {
+  margin: 0;
+  overflow: hidden; /* Empêche le scroll sur mobile en swipant */
+  background-color: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+#card-container {
+  width: 300px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carte {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: grab;
+  user-select: none; /* Empêche de surligner le texte en glissant */
+  transition: transform 0.3s ease-out; /* Animation pour le retour au centre */
+}
+
+/* Classe ajoutée par JS quand on clique pour enlever l'animation de retour */
+.carte.dragging {
+  transition: none; 
+  cursor: grabbing;
+}
+
+.carte img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* Recadre l'image proprement */
+  border-radius: 15px 15px 0 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#score-board {
+  margin-top: 20px;
+  font-size: 18px;
+}
